@@ -41,13 +41,50 @@
           </ol>
         </nav>
         <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet libero in ante ullamcorper, at sollicitudin velit pellentesque. Cras mi tortor, placerat quis diam dignissim, vestibulum ultricies nunc. Curabitur semper nisi massa, at dapibus dolor viverra eu. Maecenas ut accumsan erat. Quisque condimentum porta dui, at ultricies risus. Nulla laoreet nisl eget dui sodales, at euismod mi commodo. Phasellus sed aliquet turpis. Integer lacinia ligula non neque luctus, vel lobortis elit blandit. Suspendisse sodales fringilla libero sit amet ultricies.
-
-Nulla aliquam, risus in fermentum tempor, tellus augue blandit nibh, in varius odio purus vitae sapien. Curabitur dapibus est ac lorem tincidunt, a finibus nulla consequat. Sed nulla diam, egestas vel tortor eget, malesuada mollis purus. Nullam mollis massa a nisi venenatis auctor nec quis elit. Praesent id odio sollicitudin, consequat eros at, tempus justo. Vivamus blandit dolor risus, vitae scelerisque ex pulvinar id. Duis faucibus vitae nibh eget placerat. Suspendisse nec ultrices ex. Aliquam at leo dolor. Suspendisse lacinia venenatis hendrerit. Mauris faucibus euismod orci in pretium. Donec vitae libero at nulla lacinia eleifend.
-
-In sollicitudin consectetur arcu, at suscipit nulla. Aliquam nunc justo, fringilla sit amet est et, maximus volutpat magna. Curabitur sit amet lectus quis ipsum scelerisque euismod. Ut ac mauris eu nulla dapibus vestibulum ac sit amet justo. Aenean orci sapien, ultricies quis lacus quis, sodales auctor enim. Aliquam id ullamcorper elit, tempus commodo nisi. Praesent a ligula at dui maximus viverra. Sed a suscipit ex. Aliquam mattis dignissim leo, mattis tristique lacus porta tincidunt. Sed euismod, lorem a dapibus malesuada, mauris diam tincidunt nibh, non lacinia enim magna quis urna. Donec iaculis pulvinar lectus, nec aliquet sapien hendrerit in. In suscipit tincidunt ante eget pretium. Morbi lacus nisl, varius at sagittis ut, semper in lectus. Curabitur placerat rutrum molestie. Etiam in finibus ipsum. Aliquam erat volutpat.
-          </p>
+          <h1>Dejanos tu comentario</h1>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-sm-9">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+              </div>
+              <div class="form-group col-sm-3">
+                <label for="provincia">Provincia</label>
+                <select id="provincia" class="form-control">
+                  <option selected>Capital Federal</option>
+                  <option>Buenos Aires</option>
+                  <option>Córdoba</option>
+                  <option>Santa Fé</option>
+                  <option>Mendoza</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="comentario">Comentario</label>
+              <textarea id="comentario" class="form-control" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Comentario</button>
+          </form>
         </div>
       </div>
     </div>
