@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- Nuestro CSS personalizado -->
+    <link rel="stylesheet" href="css/main.css"/>
     <title>Hotels Guide</title>
   </head>
   <body>
@@ -15,41 +17,112 @@
         <h1>Hotels</h1>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-sm 4">
+        <div class="d-flex flex-wrap">
+          <div class="col-sm-4">
             <h2>Cómo Funciona?</h2>
             <p>Encontrá el hotel que estás buscando</p>
           </div>
-          <div class="col-sm 4">
+          <div class="col-sm-4">
             <h2>Cómo Reservar?</h2>
             <p>Elegí el hotel de tu preferencia y realizá la reserva con tus datos</p>
           </div>
-          <div class="col-sm 4">
+          <div class="col-sm-4">
             <h2>Medios de Pago</h2>
             <p>Pagá con la tarjeta de tu preferencia</p>  
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-sm 4">
+        <div class="d-flex flex-wrap">
+          <div class="card-hotel d-flex flex-column">
+            <div>
             <h3>Hotel Sussex</h3>
             <p>El hotel más céntrico de Córdoba Capital</p>
-            <button type="button" class="btn btn-primary">Reservar</button>
           </div>
-          <div class="col-sm 4">
+          <div>
+            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+          </div>
+          </div>
+          <div class="card-hotel d-flex flex-column">
+            <div>
             <h3>Hotel Stil</h3>
             <p>Ubicado en pleno centro histórico de Cartagena</p>
-            <button type="button" class="btn btn-primary">Reservar</button>
+            </div>
+            <div>
+            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
           </div>
-          <div class="col-sm 4">
+          </div>
+          <div class="card-hotel d-flex flex-column">
+            <div>
             <h3>Hotel Sheraton</h3>
             <p>Lujoso hotel en Puerto Madero</p>
-            <button type="button" class="btn btn-primary">Reservar</button>
+            </div>
+            <div>
+            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+            </div>
           </div>
+          <div class="card-hotel d-flex flex-column">
+            <div>
+            <h3>Hotel Ibiza</h3>
+            <p>De la cadena de hoteles más grande del mundo, en las playas mágicas de Ibiza</p>
+            </div>
+            <div>
+            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+            </div>
+          </div>
+          <div class="card-hotel d-flex flex-column">
+            <div>
+            <h3>Hotel New York</h3>
+            <p>Frente al Empire State</p>
+            </div>
+            <div>
+            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+          </div>
+          </div>
+          <div class="card-hotel d-flex flex-column">
+            <div>
+                <h3>Hotel Lima</h3>
+                <p>El hotel mejor ubicado de Perú</p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+            </div>
+          </div>
+          <div class="card-hotel d-flex flex-column">
+            <div>
+              <h3>Hotel Rio de Janeiro</h3>
+              <p>A pocos metros de la playa</p>
+            </div>
+            <div>
+              <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+            </div>
+            </div>
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="row">
+       <div class="col-sm-4 d-flex flex-column">
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.twitter.com">Twitter</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        </div>
+        <div class="col-sm-4">
+          <address>
+            <h3>Oficina Central</h3>
+            <p>Belgrano 1340, Venado Tuerto, Santa Fe, Argentina</p>
+            <p>+54-9-3462-599753</p>
+            <p>info@hotelsguide.com</p>
+          </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+          <a href="https://www.facebook.com">Nosotros</a>
+          <a href="https://www.twitter.com">Precios</a>
+          <a href="https://www.instagram.com">Terminos y Condiciones</a>
+          <a href="https://www.instagram.com">Contacto</a>
+        </div>
+    </div>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
