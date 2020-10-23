@@ -1,17 +1,3 @@
-@keyframes show{
-    0%{
-        transform: scale(0.2);
-        opacity: 0;
-    }
-    100%{
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.show{
-    animation: 1s show ease-out forwards;
-}
 
 .jumbotron{
     background-color: yellowgreen;
@@ -43,4 +29,23 @@
 
 .footer-address-icon{
     padding-right: 5px;
+}
+
+@keyframes banner{
+    0%{
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.accordion{
+    padding: 20px;
+}
+
+.banner{
+    animation: 1s banner ease-out forwards;
 }

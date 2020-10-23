@@ -38,22 +38,36 @@
             <li class="breadcrumb-item active"><a href="./index.html">Home</a></li>
           </ol>
         </nav>
-        <div class="d-flex flex-wrap">
+        <div class="row">
           <div class="col-sm-4">
-            <h2>Cómo Funciona?</h2>
-            <p>Encontrá el hotel que estás buscando</p>
+            <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#funciona"
+            aria-expanded="false" aria-controls="multiCollapse1">¿Cómo Funciona?</button>
           </div>
           <div class="col-sm-4">
+            <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#reserva"
+            aria-expanded="false" aria-controls="multiCollapse2">¿Cómo Reservo?</button>
+          </div>
+          <div class="col-sm-4">
+            <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#pago"
+            aria-expanded="false" aria-controls="multiCollapse3">¿Medios de Pago?</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 collapse multi-collapse" id="funciona" style="padding-top: 10px">
+            <h3>Cómo Funciona?</h3>
+            <p>Encontrá el hotel que estás buscando</p>
+          </div>
+          <div class="col-sm-4 collapse multi-collapse" id="reserva" style="padding-top: 10px">
             <h2>Cómo Reservar?</h2>
             <p>Elegí el hotel de tu preferencia y realizá la reserva con tus datos</p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 collapse multi-collapse" id="pago" style="padding-top: 10px">
             <h2>Medios de Pago</h2>
             <p>Pagá con la tarjeta de tu preferencia</p>  
           </div>
         </div>
         <hr>
-        <img class="show img-fluid" src="./images/hotelbanner.jpg" alt="imagen hotel">
+        <img class="banner img-fluid" src="./images/hotelbanner.jpg" alt="imagen hotel">
         <hr>
       </div>
       <div class="container">
