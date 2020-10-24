@@ -83,18 +83,18 @@
             <p class="card-text">El hotel más céntrico de Córdoba Capital</p>
             </div>
             <div>
-            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservation">Reservar</button>
             </div>
           </div>
           <div class="card card-hotel mr-2">
             <img src="images/hotelstil.jpg" class="card-img-top" alt="imagen hotel">
             <div class="card-body">
             <h3 class="card-title">Hotel Stil</h3>
-            <h5 class="card-subtitle text-muted">Colombia</h5>
+            <h5 class="card-subtitle text-muted">Colombia</h5>  
             <p class="card-text">Ubicado en pleno centro histórico de Cartagena</p>
             </div>
             <div>
-            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservation">Reservar</button>
             </div>
           </div>
           <div class="card card-hotel mr-2">
@@ -105,7 +105,7 @@
             <p class="card-text">Lujoso hotel en Puerto Madero</p>
             </div>
             <div>
-            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservation">Reservar</button>
             </div>
           </div>
           <div class="card card-hotel mr-2">
@@ -116,7 +116,7 @@
             <p class="card-text">De la cadena de hoteles más grandes del mundo, en las playas mágicas de Ibiza</p>
             </div>
             <div>
-            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservation">Reservar</button>
             </div>
           </div>
           <div class="card card-hotel mr-2">
@@ -127,7 +127,7 @@
             <p class="card-text">Frente al Empire State</p>
             </div>
             <div>
-            <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservation">Reservar</button>
             </div>
           </div>
           <div class="card card-hotel mr-2">
@@ -138,7 +138,7 @@
               <p class="card-text">El hotel mejor ubicado de Perú</p>
             </div>
             <div>
-                <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservation">Reservar</button>
             </div>
           </div>
           <div class="card card-hotel mr-2">
@@ -149,7 +149,80 @@
               <p class="card-text">A pocos metros de la playa</p>
             </div>
             <div>
-              <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservation">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="reservation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Elegí los datos de tu reserva</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Entrada <span aria-hidden="true" role="presentation" class="field_required" style="color:#ee0000;">*</span></label>
+                  <input type="date" class="form-control" id="recipient-name"/>
+                  <label for="recipient-name" class="col-form-label">Salida <span aria-hidden="true" role="presentation" class="field_required" style="color:#ee0000;">*</span></label>
+                  <input type="date" class="form-control" id="recipient-name"/>
+                  <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <label for="availabilityAdults"class="col-form-label">Adulto(s) <span aria-hidden="true" role="presentation" class="field_required" style="color:#ee0000;">*</span></label>
+                      <select name="adults" class="form-control field-required" id="availabilityAdults">
+                        <option value="selected">Adulto(s)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label for="availabilityChildren" class="col-form-label">Niño(s)</label>
+                      <select name="children" class="form-control" id="availabilityChildren">
+                        <option value="selected">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="roomType" class="col-form-label">Habitación</label>
+                  <select name="room" class="form-control" id="roomType">
+                    <option value selected="selected">Doble Matrimonial Superior</option>
+                    <option value="hab2">Single Superior</option>
+                    <option value="hab3">Doble Matrimonial</option>
+                    <option value="hab4">Doble Twin Superior</option>
+                    <option value="hab5">Triple Matrimonial</option>
+                  </select>
+                </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Suscribite a nuestro newsletter y recibí ofertas exclusivas!</label>
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Enviar</button>
             </div>
           </div>
         </div>

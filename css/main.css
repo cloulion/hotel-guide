@@ -44,6 +44,8 @@
 
 .accordion{
     padding: 20px;
+    box-shadow: orangered;
+    font-weight: bold;
 }
 
 .banner{
