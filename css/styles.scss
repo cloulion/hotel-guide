@@ -1,0 +1,67 @@
+$yellow: #fffa19;
+$yellowgreen: #9ACD32;
+$red: #f00c2a;
+$blue: #1903a6;
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+.jumbotron{
+    background-color: $yellowgreen;
+    color: black;
+    @include margenes(50px, 15px)
+}
+
+.carousel-caption{
+    position: absolute;
+    line-height: 7;
+    padding: 0.1em;
+    text-shadow: 1px 1px black;
+}
+
+.card-hotel{
+    flex: 1 200px;
+    justify-content: space-between;
+    @include margenes(15px, 0px)
+}
+
+.btn-reserva{
+    width: 100%;
+    border-radius: 0%;
+}
+
+.tab-content{
+    padding-top: 10px;
+}
+
+.footer{
+    padding: 10px 10px 0px 10px;
+    background-color: $yellowgreen;
+    @include margenes(10px, 0px)
+}
+
+.footer-address-icon{
+    padding-right: 5px;
+}
+
+@keyframes banner{
+    0%{
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.accordion{
+    padding: 20px;
+    box-shadow: orangered;
+    font-weight: bold;
+}
+
+.banner{
+    animation: 1s banner ease-out forwards;
+}
