@@ -313,117 +313,11 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <!-- build:js dist/index.js-->
+    <!-- build:js js/main.js-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-      $(() => {
-        $("[data-toggle='tooltip']").tooltip();
-        $("[data-toggle='popover']").popover();
-        $('.carousel').carousel({
-          interval: 2000
-        });
-        $('#reservation').on('show.bs.modal', ((e) => {
-          $('#reservaBtn1').prop('disabled', true);
-        }))
-        $('#reservation').on('shown.bs.modal', ((e) => {
-          $('#reservaBtn1').removeClass('btn-primary');
-          $('#reservaBtn1').addClass('btn-outline-primary');
-        }))
-        $('#reservation').on('hide.bs.modal', ((e) => {
-          $('#reservaBtn1').removeClass('btn-outline-primary');
-          $('#reservaBtn1').addClass('btn-primary');
-        }))
-        $('#reservation').on('hidden.bs.modal', ((e) => {
-          $('#reservaBtn1').prop('disabled', false);
-        }))
-        $('#reservation').on('show.bs.modal', ((e) => {
-          $('#reservaBtn2').prop('disabled', true);
-        }))
-        $('#reservation').on('shown.bs.modal', ((e) => {
-          $('#reservaBtn2').removeClass('btn-primary');
-          $('#reservaBtn2').addClass('btn-outline-primary');
-        }))
-        $('#reservation').on('hide.bs.modal', ((e) => {
-          $('#reservaBtn2').removeClass('btn-outline-primary');
-          $('#reservaBtn2').addClass('btn-primary');
-        }))
-        $('#reservation').on('hidden.bs.modal', ((e) => {
-          $('#reservaBtn2').prop('disabled', false);
-        }))
-        $('#reservation').on('show.bs.modal', ((e) => {
-          $('#reservaBtn3').prop('disabled', true);
-        }))
-        $('#reservation').on('shown.bs.modal', ((e) => {
-          $('#reservaBtn3').removeClass('btn-primary');
-          $('#reservaBtn3').addClass('btn-outline-primary');
-        }))
-        $('#reservation').on('hide.bs.modal', ((e) => {
-          $('#reservaBtn3').removeClass('btn-outline-primary');
-          $('#reservaBtn3').addClass('btn-primary');
-        }))
-        $('#reservation').on('hidden.bs.modal', ((e) => {
-          $('#reservaBtn3').prop('disabled', false);
-        }))
-        $('#reservation').on('show.bs.modal', ((e) => {
-          $('#reservaBtn4').prop('disabled', true);
-        }))
-        $('#reservation').on('shown.bs.modal', ((e) => {
-          $('#reservaBtn4').removeClass('btn-primary');
-          $('#reservaBtn4').addClass('btn-outline-primary');
-        }))
-        $('#reservation').on('hide.bs.modal', ((e) => {
-          $('#reservaBtn4').removeClass('btn-outline-primary');
-          $('#reservaBtn4').addClass('btn-primary');
-        }))
-        $('#reservation').on('hidden.bs.modal', ((e) => {
-          $('#reservaBtn4').prop('disabled', false);
-        }))
-        $('#reservation').on('show.bs.modal', ((e) => {
-          $('#reservaBtn5').prop('disabled', true);
-        }))
-        $('#reservation').on('shown.bs.modal', ((e) => {
-          $('#reservaBtn5').removeClass('btn-primary');
-          $('#reservaBtn5').addClass('btn-outline-primary');
-        }))
-        $('#reservation').on('hide.bs.modal', ((e) => {
-          $('#reservaBtn5').removeClass('btn-outline-primary');
-          $('#reservaBtn5').addClass('btn-primary');
-        }))
-        $('#reservation').on('hidden.bs.modal', ((e) => {
-          $('#reservaBtn5').prop('disabled', false);
-        }))
-        $('#reservation').on('show.bs.modal', ((e) => {
-          $('#reservaBtn6').prop('disabled', true);
-        }))
-        $('#reservation').on('shown.bs.modal', ((e) => {
-          $('#reservaBtn6').removeClass('btn-primary');
-          $('#reservaBtn6').addClass('btn-outline-primary');
-        }))
-        $('#reservation').on('hide.bs.modal', ((e) => {
-          $('#reservaBtn6').removeClass('btn-outline-primary');
-          $('#reservaBtn6').addClass('btn-primary');
-        }))
-        $('#reservation').on('hidden.bs.modal', ((e) => {
-          $('#reservaBtn6').prop('disabled', false);
-        }))
-        $('#reservation').on('show.bs.modal', ((e) => {
-          $('#reservaBtn7').prop('disabled', true);
-        }))
-        $('#reservation').on('shown.bs.modal', ((e) => {
-          $('#reservaBtn7').removeClass('btn-primary');
-          $('#reservaBtn7').addClass('btn-outline-primary');
-        }))
-        $('#reservation').on('hide.bs.modal', ((e) => {
-          $('#reservaBtn7').removeClass('btn-outline-primary');
-          $('#reservaBtn7').addClass('btn-primary');
-        }))
-        $('#reservation').on('hidden.bs.modal', ((e) => {
-          $('#reservaBtn7').prop('disabled', false);
-        }))
-      })
-    </script>
+    <script src="js/index.js"></script>
     <!-- endbuild -->
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
