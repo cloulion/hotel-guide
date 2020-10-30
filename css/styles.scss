@@ -2,6 +2,7 @@ $yellow: #fffa19;
 $yellowgreen: #9ACD32;
 $red: #f00c2a;
 $blue: #1903a6;
+$black: #000000;
 @mixin margenes($top, $bottom) {
     margin-top: $top;
     margin-bottom: $bottom;
@@ -30,6 +31,43 @@ $blue: #1903a6;
     width: 100%;
     border-radius: 0%;
 }
+
+.template-demo>.btn {
+    margin-right: 0.5rem !important
+}
+
+.template-demo {
+    margin-top: 0.5rem !important
+}
+
+.btn.btn-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0
+}
+
+.btn-facebook {
+    background: #3b579d;
+    color: #ffffff;
+    padding: 0.5em
+}
+
+.btn-twitter {
+    background: #2caae1;
+    color: #ffffff;
+    padding: 0.5em
+}
+
+.btn-instagram {
+    background: #dc4a38;
+    color: #ffffff;
+    padding: 0.5em
+}
+
+.btn-link {
+    color: $black;
+}
+
 
 .tab-content{
     padding-top: 10px;
